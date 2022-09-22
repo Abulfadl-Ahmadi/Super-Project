@@ -1,0 +1,323 @@
+% !TeX spellcheck = fa_FA-Persian
+\documentclass[12pt, a4paper, twoside]{book}
+\usepackage[framemethod=TikZ]{mdframed}
+\usepackage{amsthm,amsmath, bm, array, graphicx, xspace,multicol,color}
+\usepackage{enumerate}
+\usepackage{geometry}
+\geometry{
+	a4paper,
+	left=15mm,
+	right=15mm, 
+	top=20mm,
+	bottom=15mm
+}
+
+\usepackage{xepersian}
+\settextfont{B Nazanin Bold}
+\setdigitfont{Yas}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\definecolor{mycolor}{rgb}{0,0,0}
+\newcounter{question}
+\newenvironment{mcquestions}{\begin{itemize}}{\end{itemize}}
+\newcommand{\question}[1]{\stepcounter{question}\item[\textcolor{mycolor}{\thequestion-}]  #1}
+\newsavebox{\answera}
+\newsavebox{\answerb}
+\newsavebox{\answerc}
+\newsavebox{\answerd}
+\newcommand{\answer}[4]{%
+	\sbox\answera{\gozin #1}%
+	\sbox\answerb{\gozin #2}%
+	\sbox\answerc{\gozin#3}%
+	\sbox\answerd{\gozin#4}%
+	\ifdim\wd\answera<0.165\textwidth%
+	\ifdim\wd\answerb<0.165\textwidth%
+	\ifdim\wd\answerc<0.165\textwidth%
+	\ifdim\wd\answerd<0.165\textwidth%
+	\begin{multicols}{4}
+		\begin{itemize}
+			\item[\textcolor{mycolor}{1)}] \usebox{\answera}
+			\item[\textcolor{mycolor}{2)}] \usebox{\answerb}
+			\item[\textcolor{mycolor}{3)}] \usebox{\answerc}
+			\item[\textcolor{mycolor}{4)}] \usebox{\answerd}
+		\end{itemize}
+	\end{multicols}
+	\else%
+	\ifdim\wd\answera<0.4\textwidth%
+	\ifdim\wd\answerb<0.4\textwidth%
+	\ifdim\wd\answerc<0.4\textwidth%
+	\ifdim\wd\answerd<0.4\textwidth%
+	\begin{multicols}{2}
+		\begin{itemize}
+			\item[\textcolor{mycolor}{1)}] \usebox{\answera}
+			\item[\textcolor{mycolor}{3)}] \usebox{\answerc}
+			\item[\textcolor{mycolor}{2)}] \usebox{\answerb}
+			\item[\textcolor{mycolor}{4)}] \usebox{\answerd}
+		\end{itemize}
+	\end{multicols}
+	\else
+	\begin{itemize}\gozin 
+		\item[\textcolor{mycolor}{1)}] \gozin #1
+		\item[\textcolor{mycolor}{2)}] \gozin #2
+		\item[\textcolor{mycolor}{3)}] \gozin #3
+		\item[\textcolor{mycolor}{4)}] \gozin #4
+	\end{itemize}
+	\fi
+	\else
+	\begin{itemize}\gozin 
+		\item[\textcolor{mycolor}{1)}] #1
+		\item[\textcolor{mycolor}{2)}] #2
+		\item[\textcolor{mycolor}{3)}] #3
+		\item[\textcolor{mycolor}{4)}] #4
+	\end{itemize}
+	\fi
+	\else
+	\begin{itemize}\gozin 
+		\item[\textcolor{mycolor}{1)}] #1
+		\item[\textcolor{mycolor}{2)}] #2
+		\item[\textcolor{mycolor}{3)}] #3
+		\item[\textcolor{mycolor}{4)}] #4
+	\end{itemize}
+	\fi
+	\else
+	\begin{itemize}\gozin 
+		\item[\textcolor{mycolor}{1)}] #1
+		\item[\textcolor{mycolor}{2)}] #2
+		\item[\textcolor{mycolor}{3)}] #3
+		\item[\textcolor{mycolor}{4)}] #4
+	\end{itemize}
+	\fi\fi
+	\else
+	\ifdim\wd\answera<0.4\textwidth%
+	\ifdim\wd\answerb<0.4\textwidth%
+	\ifdim\wd\answerc<0.4\textwidth%
+	\ifdim\wd\answerd<0.4\textwidth%
+	\begin{multicols}{2}
+		\begin{itemize}
+			\item[\textcolor{mycolor}{1)}] \usebox{\answera}
+			\item[\textcolor{mycolor}{3)}] \usebox{\answerc}
+			\item[\textcolor{mycolor}{2)}] \usebox{\answerb}
+			\item[\textcolor{mycolor}{4)}] \usebox{\answerd}
+		\end{itemize}
+	\end{multicols}
+	\else
+	\begin{itemize}\gozin 
+		\item[\textcolor{mycolor}{1)}] #1
+		\item[\textcolor{mycolor}{2)}] #2
+		\item[\textcolor{mycolor}{3)}] #3
+		\item[\textcolor{mycolor}{4)}] #4
+	\end{itemize}
+	\fi
+	\else
+	\begin{itemize}\gozin 
+		\item[\textcolor{mycolor}{1)}] #1
+		\item[\textcolor{mycolor}{2)}] #2
+		\item[\textcolor{mycolor}{3)}] #3
+		\item[\textcolor{mycolor}{4)}] #4
+	\end{itemize}
+	\fi
+	\else
+	\begin{itemize}\gozin 
+		\item[\textcolor{mycolor}{1)}] #1
+		\item[\textcolor{mycolor}{2)}] #2
+		\item[\textcolor{mycolor}{3)}] #3
+		\item[\textcolor{mycolor}{4)}] #4
+	\end{itemize}
+	\fi
+	\else
+	\begin{itemize}\gozin 
+		\item[\textcolor{mycolor}{1)}] #1
+		\item[\textcolor{mycolor}{2)}] #2
+		\item[\textcolor{mycolor}{3)}] #3
+		\item[\textcolor{mycolor}{4)}] #4
+	\end{itemize}
+	\fi\fi
+	\else
+	\ifdim\wd\answera<0.4\textwidth%
+	\ifdim\wd\answerb<0.4\textwidth%
+	\ifdim\wd\answerc<0.4\textwidth%
+	\ifdim\wd\answerd<0.4\textwidth%
+	\begin{multicols}{2}
+		\begin{itemize}
+			\item[\textcolor{mycolor}{1)}] \usebox{\answera}
+			\item[\textcolor{mycolor}{3)}] \usebox{\answerc}
+			\item[\textcolor{mycolor}{2)}] \usebox{\answerb}
+			\item[\textcolor{mycolor}{4)}] \usebox{\answerd}
+		\end{itemize}
+	\end{multicols}
+	\else
+	\begin{itemize}\gozin 
+		\item[\textcolor{mycolor}{1)}] #1
+		\item[\textcolor{mycolor}{2)}] #2
+		\item[\textcolor{mycolor}{3)}] #3
+		\item[\textcolor{mycolor}{4)}] #4
+	\end{itemize}
+	\fi
+	\else
+	\begin{itemize}\gozin 
+		\item[\textcolor{mycolor}{1)}] #1
+		\item[\textcolor{mycolor}{2)}] #2
+		\item[\textcolor{mycolor}{3)}] #3
+		\item[\textcolor{mycolor}{4)}] #4
+	\end{itemize}
+	\fi
+	\else
+	\begin{itemize}\gozin 
+		\item[\textcolor{mycolor}{1)}] #1
+		\item[\textcolor{mycolor}{2)}] #2
+		\item[\textcolor{mycolor}{3)}] #3
+		\item[\textcolor{mycolor}{4)}] #4
+	\end{itemize}
+	\fi
+	\else
+	\begin{itemize}\gozin 
+		\item[\textcolor{mycolor}{1)}] #1
+		\item[\textcolor{mycolor}{2)}] #2
+		\item[\textcolor{mycolor}{3)}] #3
+		\item[\textcolor{mycolor}{4)}] #4
+	\end{itemize}
+	\fi\fi
+	\else
+	\ifdim\wd\answera<0.4\textwidth%
+	\ifdim\wd\answerb<0.4\textwidth%
+	\ifdim\wd\answerc<0.4\textwidth%
+	\ifdim\wd\answerd<0.4\textwidth%
+	\begin{multicols}{2}
+		\begin{itemize}
+			\item[\textcolor{mycolor}{1)}] \usebox{\answera}
+			\item[\textcolor{mycolor}{3)}] \usebox{\answerc}
+			\item[\textcolor{mycolor}{2)}] \usebox{\answerb}
+			\item[\textcolor{mycolor}{4)}] \usebox{\answerd}
+		\end{itemize}
+	\end{multicols}
+	\else
+	\begin{itemize}\gozin 
+		\item[\textcolor{mycolor}{1)}] #1
+		\item[\textcolor{mycolor}{2)}] #2
+		\item[\textcolor{mycolor}{3)}] #3
+		\item[\textcolor{mycolor}{4)}] #4
+	\end{itemize}
+	\fi
+	\else
+	\begin{itemize}\gozin 
+		\item[\textcolor{mycolor}{1)}] #1
+		\item[\textcolor{mycolor}{2)}] #2
+		\item[\textcolor{mycolor}{3)}] #3
+		\item[\textcolor{mycolor}{4)}] #4
+	\end{itemize}
+	\fi
+	\else
+	\begin{itemize}\gozin 
+		\item[\textcolor{mycolor}{1)}] #1
+		\item[\textcolor{mycolor}{2)}] #2
+		\item[\textcolor{mycolor}{3)}] #3
+		\item[\textcolor{mycolor}{4)}] #4
+	\end{itemize}
+	\fi
+	\else
+	\begin{itemize}\gozin 
+		\item[\textcolor{mycolor}{1)}] #1
+		\item[\textcolor{mycolor}{2)}] #2
+		\item[\textcolor{mycolor}{3)}] #3
+		\item[\textcolor{mycolor}{4)}] #4
+	\end{itemize}
+	\fi\fi
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\makeatletter
+\DeclareRobustCommand\onedot{\futurelet\@let@token\@onedot}
+\def\@onedot{\ifx\@let@token.\else.\null\fi\xspace}
+
+\def\eg{\emph{e.g}\onedot \,} \def\Eg{\emph{E.g}\onedot}
+\def\ie{\emph{i.e}\onedot} \def\Ie{\emph{I.e}\onedot}
+\def\cf{\emph{c.f}\onedot} \def\Cf{\emph{C.f}\onedot}
+\def\etc{\emph{etc}\onedot} \def\vs{\emph{vs}\onedot}
+\def\wrt{w.r.t\onedot} \def\dof{d.o.f\onedot}
+\def\etal{\emph{et al}\onedot}
+\makeatother
+
+
+\newcommand{\sol}{\bigskip \bigskip \bigskip  \bigskip \bigskip \bigskip \smallskip  }
+
+\newcommand{\fasele}{\;\;\;\;\;\;}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcounter{tafir}[section] \setcounter{tafir}{0}
+\renewcommand{\thetafir}{\arabic{tafir}}
+\newenvironment{tafir}[2][]{%
+	\refstepcounter{tafir}%
+	\ifstrempty{#1}%
+	{\mdfsetup{%
+			frametitle={%
+				\tikz[baseline=(current bounding box.east),outer sep=0pt]
+				\node[anchor=east,rectangle,fill=blue!15]
+				{\large\; \strut تعریف \; ~\thetafir \;\;};}}
+	}%
+	{\mdfsetup{%
+			frametitle={%
+				\tikz[baseline=(current bounding box.east),outer sep=0pt]
+				\node[anchor=east,rectangle,fill=blue!15,rounded corners,draw= blue!40, double=blue!40, ]
+				{\; #1~ :\strut  {\large تعریف\;\;~\thetafir\;\;}};}}%
+	}%
+	\mdfsetup{innertopmargin=8pt,linecolor=blue!15, backgroundcolor=blue!4,%
+		linewidth=2pt,topline=true,%
+		frametitleaboveskip=\dimexpr-\ht\strutbox\relax, roundcorner=10pt
+	}
+	\begin{mdframed}[userdefinedwidth= 18cm,frametitlealignment=\fasele]\relax%
+		\label{#2}}{\end{mdframed}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcounter{nokte}[section] \setcounter{nokte}{0}
+\renewcommand{\thenokte}{\arabic{nokte}}
+\newenvironment{nokte}[2][]{%
+	\refstepcounter{nokte}%
+	\ifstrempty{#1}%
+	{\mdfsetup{%
+			frametitle={%
+				\tikz[baseline=(current bounding box.east),outer sep=0pt]
+				\node[anchor=east,rectangle,fill=red!15,rounded corners,draw= red!40, double=red!40,]
+				{\large\; \strut نکته \; ~\thenokte \;\;};}}
+	}%
+	{\mdfsetup{%
+			frametitle={%
+				\tikz[baseline=(current bounding box.east),outer sep=0pt]
+				\node[anchor=east,rectangle,fill=red!15,rounded corners,draw= red!50, double=red!50]
+				{\; #1~ :\strut  {\large نکته\;\;~\thenokte\;}};}}%
+	}%
+	\mdfsetup{innertopmargin=8pt,linecolor=red!15, backgroundcolor=red!4, %
+		linewidth=2pt,topline=true,%
+		frametitleaboveskip=\dimexpr-\ht\strutbox\relax, roundcorner=10pt
+	}
+	\begin{mdframed}[userdefinedwidth= 18cm,frametitlealignment=\fasele]\relax%
+		\label{#2}}{\end{mdframed}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%Examples
+\linespread{1.5}
+\begin{document}
+	\defpersianfont\kadr{XB Niloofar}‎
+	\defpersianfont\gozin{B Nazanin}‎
+
+\begin{mcquestions}
+<<<<<<< HEAD
+	\item \question{خر}
+=======
+	\question{سوال اول}
+	\answer{1}{2}{3}{4}
+	
+		\question{سوال اول}
+>>>>>>> 4e35669feb25f8fb4989e79b26ccf808e5f8f94c
+	\answer{1}{2}{3}{4}
+	\question{خر2}
+	\answer{1}{2}{3}{4}
+	$x^2+6x+2=0$
+	
+
+
+\end{mcquestions}
+
+\end{document}
