@@ -86,6 +86,45 @@
         Developing
     </h2>
 
+
+
+    <p>If you have a picture or PDF of your file:</p>
+
+    <p><b>1. croping:</b> Crop your question.</p>
+    
+    <p>Your croped question does not have to have numbering.</p>
+    
+    <p><b>2. placement:</b> Place the resulting file of previous step in Image/ and rename it in order.</p>
+    
+    <p><b>apply:</b> Now, You have to add that question into the doc-4.tex.</p>
+    
+    <p>To add a question follow this structure:</p>
+    
+    <code>\question{<em>&ltquestion_file&gt</em>}</code>
+    
+    <p>If the question doesn't have option do this:</p>
+    
+    <code>\quz{<em>&ltquestion_file&gt</em>} \answer{<em>&ltoption-1&gt</em>}{<em>&ltoption-2&gt</em>}{<em>&ltoption-3&gt</em>}{<em>&ltoption-4&gt</em>}</code>
+    
+    <p>If you want to write the question:</p>
+    
+    <p><b>3. question:</b> Write your question.</p>
+    <p>To write a question follow this structure:</p>
+    <code>
+    \test{<em>&ltyour_question&gt</em>} \answer{<em>&ltoption-1&gt</em>}{<em>&ltoption-2&gt</em>}{<em>&ltoption-3&gt</em>}{<em>&ltoption-4&gt</em>}
+    </code>
+
+    <p>In this case if your question placed in the bottom of the page and its options placed in the next page add and
+         <code>\newpage</code> before the question to place the question and its options in the new page
+    </p>
+    <p>
+    If the question have math do this:
+    </p>
+    <code>
+        \riazi{<em>&ltmath_expresion&gt</em>}
+    </code>
+
+
     <h2>
         Remove password of PDF
     </h2>
