@@ -1,9 +1,53 @@
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@100&display=swap" rel="stylesheet">
 
-h1 {
-    font-family: 'CustomFont', Arial, sans-serif;
-    font-weight:normal;
-    font-style:normal;
-    }
+        body {
+            font-family: 'IBM Plex Sans', sans-serif;
+            margin: 0 0 0 0;
+            margin-bottom: -20px;
+        }
+
+        hl {
+            background-color: #f6f6f6;
+            border-radius: 7px;
+            padding: 0px;
+            padding-left: 3px;
+            padding-right: 3px;
+        }
+        
+        code {
+            font-family: 'IBM Plex Mono', monospace;
+            font-size: 80%;
+            border-radius: 6px;
+            background: #e7e7e7;
+            padding: 3px;
+            padding-left: 6px;
+            padding-right: 6px;
+        }
+
+
+        vaz {
+            font-family: 'Vazirmatn', sans-serif;
+        }
+
+        a:link {
+            text-decoration: none;
+            color: rgb(0, 98, 255);
+        }
+
+        a:hover  {
+            text-decoration: underline;
+            color: rgb(28, 114, 252);
+        }
+
+        footer {
+            background-color: #c0c0c0;
+            text-align: center;
+            padding: 10px;
+        }
+
+        @media (min-width:320px)  { .content{margin-left: 10px; margin-right: 10px;} } /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */
+        @media (min-width:480px)  { .content{margin-left: 10px; margin-right: 10px;} } /* smartphones, Android phones, landscape iPhone */
+        @media (min-width:600px)  { .content{margin-left: 30px; margin-right: 30px;} } /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */ 
+        @media (min-width:801px)  { .content{margin-left: 40px; margin-right: 40px;} } /* tablet, landscape iPad, lo-res laptops ands desktops */ 
+        @media (min-width:1025px) { .content{margin-left: 50px; margin-right: 50px;} } /* big landscape tablets, laptops, and desktops */ 
+        @media (min-width:1281px) { .content{margin-left: 50px; margin-right: 50px;} } /* hi-res laptops and desktops */ 
+    

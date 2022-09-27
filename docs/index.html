@@ -10,51 +10,37 @@
     <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,500;0,700;1,500;1,700&family=IBM+Plex+Sans:ital,wght@0,500;0,700;1,500;1,700&display=swap" rel="stylesheet">
-    
-    <style>
-        body {
-            font-family: 'IBM Plex Sans', sans-serif;
-        }
-        
-        code {
-            font-family: 'IBM Plex Mono', monospace;
-            font-size: 80%;
-            border-radius: 6px;
-            background: #e9e9e9;
-            padding: 3px;
-        }
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.0-rc.1/dist/katex.min.css" integrity="sha384-D+9gmBxUQogRLqvARvNLmA9hS2x//eK1FhVb9PiU86gmcrBrJAQT8okdJ4LMp2uv" crossorigin="anonymous">
 
+    <!-- The loading of KaTeX is deferred to speed up page rendering -->
+    <script src="https://cdn.jsdelivr.net/npm/katex@0.10.0-rc.1/dist/katex.min.js" integrity="sha384-483A6DwYfKeDa0Q52fJmxFXkcPCFfnXMoXblOkJ4JcA8zATN6Tm78UNL72AKk+0O" crossorigin="anonymous"></script>
 
-        vaz {
-            font-family: 'Vazirmatn', sans-serif;
-        }
-
-        a:link {
-            text-decoration: none;
-            color: rgb(0, 98, 255);
-        }
-
-        a:hover  {
-            text-decoration: underline;
-            color: rgb(28, 114, 252);
-        }
-
-
-        @media (min-width:320px)  { .content{margin-left: 10px; margin-right: 10px;} } /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */
-        @media (min-width:480px)  { .content{margin-left: 10px; margin-right: 10px;} } /* smartphones, Android phones, landscape iPhone */
-        @media (min-width:600px)  { .content{margin-left: 30px; margin-right: 30px;} } /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */ 
-        @media (min-width:801px)  { .content{margin-left: 40px; margin-right: 40px;} } /* tablet, landscape iPad, lo-res laptops ands desktops */ 
-        @media (min-width:1025px) { .content{margin-left: 50px; margin-right: 50px;} } /* big landscape tablets, laptops, and desktops */ 
-        @media (min-width:1281px) { .content{margin-left: 50px; margin-right: 50px;} } /* hi-res laptops and desktops */ 
-    </style>
+    <!-- To automatically render math in text elements, include the auto-render extension: -->
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.0-rc.1/dist/contrib/auto-render.min.js" integrity="sha384-yACMu8JWxKzSp/C1YV86pzGiQ/l1YUfE8oPuahJQxzehAjEt2GiQuy/BIvl9KyeF" crossorigin="anonymous"
+        onload="renderMathInElement(document.body);"></script>
+    <link rel="stylesheet" type="text/css" href="style.css" />
 </head>
 <body>
     <div class="content">
     <h1>
         Super Project
     </h1>
+    <p>
+        This pamphlet includes multiple-choice questions from <hl>quadratic equations</hl>, <hl>irrational equations</hl>,
+        <hl>rational equations</hl> and <hl>parabola</hl>, most of the questions are about <hl> quadratic equations </hl>, 
+        Special attention has been paid to the relationship between the roots of quadratic equations (\(\alpha, \beta\)).
+        questions about sum, product, etc. of roots.
+    </p>
+    <p>
+        Various and numerous resources ahve been used to compile this pamphlet,
+        The sources are mostly from test of institutions such as <hl>Maze</hl>, <hl>Qalamchi</hl>, <hl>Gaj</hl>, <hl>Qozine 2</hl>, etc,
+        test of <hl>high schools</hl> and the national entrance exam <hl>(konkur)</hl> of the last two decades
+        and also <hl>Mathematics Olympiad</hl>.
+    </p>
 
-    This project was created by <b>Abulfadl</b> Ahmadi & <b>Alireza</b> Kachooie.
+    <p>
+        The pamphlet hasn't been completed yet and we are constantly striving to complete, improve and make it more comprehensive.
+    </p>
 
 
     <p align="right" float="middle">
@@ -135,8 +121,14 @@
     </p>
 
 
-    
 
 </div>
+
+
+  <footer>
+    This project was created by <b>Abulfadl</b> Ahmadi & <b>Alireza</b> Kachooie.
+  </footer>
 </body>
+
 </html>
+
