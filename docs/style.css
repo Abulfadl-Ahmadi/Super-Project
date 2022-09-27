@@ -15,8 +15,16 @@
 
         p {
             text-align: justify;
-            text-justify: inter-word;
+            /* text-justify: inter-word; */
         }
+
+        .right-align {
+            text-align: right;
+            /* text-justify: inter-word; */
+        }
+
+
+
         
         code {
             font-family: 'IBM Plex Mono', monospace;
@@ -45,6 +53,7 @@
 
         vaz {
             font-family: 'Vazirmatn', sans-serif;
+            text-align: right;
         }
 
         a:link {
