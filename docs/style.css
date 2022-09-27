@@ -15,12 +15,11 @@
 
         p {
             text-align: justify;
-            /* text-justify: inter-word; */
+            text-justify: inter-word;
         }
 
         .right-align {
             text-align: right;
-            /* text-justify: inter-word; */
         }
 
 
@@ -38,7 +37,6 @@
 
         kbd {     
             font-family: 'IBM Plex Sans', sans-serif;
-            /* font-family: 'IBM Plex Mono', monospace; */
             font-size: 90%;
             border-radius: 6px;
             background: #e8e8e8;
