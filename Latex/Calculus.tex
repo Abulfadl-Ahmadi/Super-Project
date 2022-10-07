@@ -1,5 +1,6 @@
 \documentclass[11pt]{book}
 \usepackage{ dblfloatfix,enumitem,graphicx,adjustbox,fancyhdr,color,multicol,bm,amsthm,amsmath}
+
 \usepackage[hidelinks]{hyperref}
 \usepackage{geometry}
 \geometry{	%--------------تعیین حاشیه صفحه--------------
@@ -22,7 +23,7 @@
 \fancyhead[CO,CE]{معادله درجه دوم}
 \fancyhead[LO,RE]{\thepage}
 
-\renewcommand{\adjboxvtop}{8mm}
+\renewcommand{\adjboxvtop}{6mm}
 %--------------تعیین فاصله بین تست ها--------------
 \newcommand{\sol}{\bigskip \bigskip \bigskip \bigskip \bigskip \bigskip }
 
@@ -45,7 +46,7 @@
 % -------------------------------------------------------------
 
 %\newenvironment{mcquestions}{}{}
-\newcommand{\test}[1]{\textbf{\item #1}}
+\newcommand{\test}[1]{\textbf{\item {\large #1}}}
 \newsavebox{\answera}
 \newsavebox{\answerb}
 \newsavebox{\answerc}
@@ -260,22 +261,25 @@
 
 
 \begin{center}
-	\begin{minipage}{17cm}
+	\begin{minipage}{16cm}
 {\large 
 	\setlength{\parindent}{1.5em}
 	
 	\textbf{{\huge مقدمه }}\bigskip
 	
 	\indent
-این مجموعه، شامل تست‌هایی از مباحث معادلات درجه دوم، گنگ و گویا و همچنین کمی سهمی است، عموم سوالات در خصوص معادله درجه دوم است، توجه ویژه‌ای بر روابط بین ریشه‌های معادلات درجه دوم شده، سوالاتی درخصوص جمع و ضرب ریشه‌ها و...
+این مجموعه، شامل تست‌هایی از مباحث معادلات درجه دوم، گنگ و گویا و همچنین  سهمی است، عموم سوالات در خصوص معادله درجه دوم است، توجه ویژه‌ای بر روابط بین ریشه‌های معادلات درجه دوم شده، سوالاتی درخصوص جمع و ضرب ریشه‌ها و...
+
 \smallskip
 
-برای جمع‌آوری این سوالات سعی کردیم از منابع متنوع و متعددی کمک بگیریم. سوالات عموماً از آزمون‌های آزمایشی کنکور سراسری (قلمچی، گزینه دو، گاج، ماز و...)، آزمون‌های مدارس برتر و کنکور سراسری دو-سه دهه اخیر و همچنین المپیادهای ریاضی انتخاب می‌شوند.\smallskip
+برای جمع‌آوری این سوالات سعی کردیم از منابع متنوع و متعددی کمک بگیریم. سوالات عموماً از آزمون‌های آزمایشی کنکور سراسری (قلمچی، گزینه دو، گاج، ماز و...)، آزمون‌های مدارس برتر و کنکور سراسری دو-سه دهه اخیر، گزیدهٔ تست‌های کتب کمک درسی و همچنین المپیادهای ریاضی انتخاب می‌شوند.
+
+\smallskip \smallskip
+
 
 این مجموعه، هنوز تکمیل نشده و ما در تلاش مستمر برای تکمیل و بهبود و جامع‌تر کردن‌ آن هستیم، شما می‌توانید آخرین نسخه این مجموعه را با اسکن کد زیر دریافت کنید.
-
-\bigskip
-
+}\end{minipage}
+\end{center}
 % \begin{latin}   
 
 
@@ -292,11 +296,9 @@
 % \hfill - October, 2022 - 
 % \end{latin}
 
-}\end{minipage}
-\end{center}
 
 
-\sol 
+ 
 
 \begin{figure*}[bp]
 \begin{center}
@@ -545,9 +547,27 @@
 	\quenstion{203}
 	\quenstion{204}
 	\quenstion{205}
-	\quenstion{206}
+	\newpage
+	
+	\test{
+دو دانش‌آموز، هم‌زمان شروع به حل معادلهٔ
+\riazi{2x^2 + ax +b =0}
+می‌کنند. اولی جواب‌ها را ۳ و ۶ و دومی جواب‌ها را ۲ و ۵ به دست آورده است. اگر بدانیم اولی عدد ثابت معادله و دومی ضریب 
+\riazi{x}
+را اشتباه دیده‌اند، تفاضل ریشه‌ها در صورت صحیح معادله کدام است؟	
+}\answer{}{}{}{}
+	%\quenstion{206}
 	\quenstion{207}
-	\quenstion{208}
+	
+	
+	\test{
+		به ازای کدام مقدار 
+		\riazi{m}
+		در معادلهٔ درجه دوم
+		\riazi{(m+1)x^2-3x+m}
+		یکی از ریشه‌ها دو برابر ریشه‌ٔ دیگر است؟
+}\answer{$3,-2$}{$2,-3$}{$2,-1$}{$1,-2$}
+	%\quenstion{208}
 	\quenstion{209}
 
 \test{
@@ -572,7 +592,7 @@
 چهار ریشهٔ حقیقی دارد که مجموع مربعات آن‌‌ها برابر ۳۰ است.چند مقدار برای \riazi{m} وجود دارد؟
 }
 \answer{صفر}{40}{۲}{۴}
-	\quenstion{214} \newpage
+	\quenstion{214} 
 \test{
 اگر 
 \riazi{\alpha} و \riazi{\beta}
@@ -585,6 +605,8 @@
 می‌باشند؟
 }
 \answer{$x^2+x-3=0$}{$2x^2-x+3=0$}{$x^2-3x+1=0$}{$3x^2-x-1=0$}
+
+\newpage
 
 \test{
 اگر 
@@ -604,20 +626,78 @@
 چند جواب دارد؟
 }\answer{صفر}{۲}{۳}{۴}
 	
-	\quz{218} \bigskip \bigskip \bigskip
+	
+	\test{
+تعداد ریشه‌های حقیقی و متمایز معادلهٔ
+\riazi{(x+1)(x+2)(x+6)(x+7)=36}
+کدام است؟	
+}\answer{1}{2}{3}{صفر}
+	%\quz{218} \bigskip \bigskip \bigskip
 	\quenstion{219}
 	\quenstion{220}
 	\quenstion{221}
 	\quenstion{222}
-	\quenstion{223}
+	
+	\test{
+اگر 	
+\riazi{\alpha} و \riazi{\beta}
+ریشه‌های معادلهٔ
+\riazi{x^2-x-1=0}
+باشند، حاصل عبارت
+\riazi{\left(\alpha + \dfrac{1}{\alpha -1}\right)^2 + \left(\beta + \dfrac{1}{\beta -1}\right)^2}
+کدام است؟
+}\answer{$4\sqrt{5}$}{4+4$\sqrt{5}$}{8}{12}
+	%\quenstion{223}
 
 
 	
+	\test{
+به ازای دو مقدار 
+\riazi{a}،
+یک ریشهٔ معادلهٔ
+\riazi{3x^2-ax+4=0}،
+سه برابر ریشهٔ دیگر است. اختلاف این دو مقدار
+\riazi{a}،
+کدام است؟	
+}\answer{8}{9}{16}{18}
+	%\quenstion{224}	
 
-	\quenstion{224}
-	\quenstion{225}
-	\quenstion{226}
-	\quenstion{227}
+\newpage
+
+\test{
+اگر
+\riazi{\alpha} و \riazi{\beta}
+ریشه‌های معادلهٔ
+\riazi{x^2+2(a+1)x+2a-1=0}
+باشند، به ازای کدام مقدار 
+\riazi{a}،
+به ترتیب سه عدد 
+\riazi{\alpha}، \riazi{a} و \riazi{\beta}
+تشکیل دنبالهٔ هندسی می‌دهند؟
+}\answer{$-2$}{$2$}{$-1$}{$1$}
+	%\quenstion{225}
+	
+	\test{
+\riazi{\alpha} و \riazi{\beta}
+ریشه‌های معادلهٔ
+\riazi{x^2+6a+a=0}
+هستند، اگر
+\riazi{\alpha < \beta < 0}
+و
+\riazi{3\alpha^2 + 2\beta^2 = 12\sqrt{2} + 85}
+باشد، مقدار \riazi{a} چقدر است؟
+}\answer{1}{$\dfrac{13}{4}$}{$\dfrac{21}{5}$}{2}
+%\quenstion{226}
+
+\test{
+اگر مجموع و حاصل‌ضرب ریشه‌های حقیقی معادلهٔ 
+\riazi{x^4-7x^2-5=0}
+به ترتیب \riazi{S} و \riazi{P} باشند، حاصل‌ عبارت \hfill
+\riazi{2P^2-3SP+2S}،
+ کدام است؟
+}\answer{$59-7\sqrt{69}$}{$7+\sqrt{69}$}{$50$}{$59+7\sqrt{69}$}
+%\quenstion{227}
+
 	\quenstion{228}
 	\quenstion{229}
 	\quenstion{230}
@@ -785,12 +865,86 @@
 	باشد؛ مقدار \riazi{m}، کدام است؟
 }\answer{$-2$}{صفر}{۱}{۲}
 
+\newpage
 
-\quenstion{312}
-\quenstion{313}
-\quenstion{314}
-\quenstion{315}
-\quenstion{316}
+\test{
+\riazi{a, b, c}
+اعدادی دو به دو متمایز هستند؛ می‌دانیم سه معادلهٔ درجه دوی زیر ریشه‌ای مشترک دارند. مقدار آن ریشهٔ مشترک چقدر؟}
+
+\begin{center}
+	$\bm{ax^2+bx+c=0 \quad , \quad bx^2+cx+a=0 \quad , \quad cx^2 + ax+b=0}$
+\end{center}
+
+
+۱) صفر \hfill
+۲) $\dfrac{1-\sqrt{5}}{2}$ \hfill
+۳) $-1$ \hfill
+۴) ۱ \hfill
+۵) به‌طور یکتا تعیین نمی‌شود. \sol
+
+%\quenstion{312}
+
+\test{
+برای عدد حقیقی 
+\riazi{x}،
+کم‌ترین مقدار عبارت زیر چند است؟
+\begin{center}
+	\riazi{\sqrt{x^2+4x+8} + \sqrt{x^2-6x+10}}
+\end{center}
+}
+
+۱) $2+ \sqrt5$ \hfill
+۲) $4\sqrt2$ \hfill
+۳) $\sqrt{34}$ \hfill
+۴) $\sqrt{5} + \sqrt{13}$ \hfill
+۵) $\sqrt{8} + \sqrt{10}$ \hfill
+\sol \sol
+
+%\quenstion{313}
+
+\test{
+چهار مربع به ضلع ۲ واحد مانند شکل کنار یکدیگر قرار دارند. یک سهمی از نقاط 
+\riazi{A}، \riazi{B} و \riazi{C}
+عبور کرده و محور 
+\riazi{x}ها
+را در دو نقطه قطع می‌کند. فاصله نقاط تقاطع چند واحد است؟ 
+}
+
+\begin{minipage}{12cm}
+	\renewcommand{\arraystretch}{2}
+	\begin{tabular}{r}
+			۱) $7$ \\
+			۲) $2\sqrt{13}$ \\
+			۳) $5\sqrt{2}$ \\
+			۴) $3\sqrt{7}$ \\ 
+			۵) $8$ \\
+	\end{tabular}
+\end{minipage}
+\begin{minipage}{6cm}
+	\includegraphics[width=6cm]{../Source/314}
+\end{minipage}
+
+%\quenstion{314}
+
+\newpage
+
+\test{
+	تعداد جواب‌های صحیح معادله زیر را بیابید
+	\begin{center}
+		\riazi{(x^2+5x+5)^{(x^2-10x+21)} = 1}
+	\end{center}
+}
+
+\sol \sol \sol
+%\quenstion{315}
+
+\test{
+در معادلهٔ درجهٔ سوم 
+\riazi{ax^2+bx+c=0}
+ضرایب همگی اعداد گویا هستند و می‌دانیم که یکی از ریشه‌های آن با حاصل‌ضرب دو ریشهٔ دیگر برابر است. ثابت کنید همین ریشه، عددی گویاست.
+}
+
+%\quenstion{316}
 
 
 \end{enumerate}
